@@ -10,10 +10,10 @@ public class AlunoModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nome;
     private String matricula;
     private String endereco;
-    private Long id;
 
     public AlunoModel(String nome, String matricula, String endereco, Long id) {
         this.nome = nome;
